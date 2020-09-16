@@ -24,7 +24,6 @@ def wining_rule(c_bet, u_bet):
 
 
 ''' Rules '''
-
 try:
     file = open('ruless.txt')
     for line in file:
@@ -63,5 +62,5 @@ if win > loose:
 elif loose > win:
     print(f'Congratulation Computer Ji for Wining')
 else:
-    print("Draw")
+    print("Match Draw")
 print(f'Total Win: {win}, Loose: {loose}, Draw: {tie}, Invalid Input {invalid}')

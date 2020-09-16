@@ -16,3 +16,4 @@ Comparing Method:> if you choose:
 Snake > then 'Snake' can Beat 'Water' by drinking it but can be beaten by 'Gun'
 Water > then 'Water' can beat 'Gun' by damaging it but can be beaten by 'Snake'
 Gun   > then 'Gun' can beat 'Snake' by killing it but can be beaten by 'Water'
+

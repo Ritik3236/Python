@@ -1,7 +1,7 @@
 # Python does not provide multiple ways to do the same thing .
 import random
 
-tricks = ['s', 'w', 'g']
+tricks = ['snake', 'water', 'gun']
 rounds = 10
 tie = 0
 win = 0
@@ -23,6 +23,7 @@ def wining_rule(c_bet, u_bet):
         return 2
 
 
+name = input("Enter Your Name: ")
 ''' Rules '''
 try:
     file = open('ruless.txt')
@@ -31,13 +32,14 @@ try:
         # input()
     file.close()
 except Exception:
-    print("Snake : s, Water : w, Gun : g")
+    print(f"Welcome {name} Ji to 'Snake Water Gun' game\n"
+          f"Choices are: Snake, Water, Gun")
 
 ''' Program '''
-name = input("Welcome Player Enter Your Name: ")
+
 for i in range(1, rounds + 1):
     computer_bet = random.choices(tricks)
-    user_bet = input("\nEnter Your Bet: ").lower()
+    user_bet = input("\nEnter Your Choice: ").lower()
     result = wining_rule(computer_bet[0], user_bet)
 
     if result == -1:
@@ -56,11 +58,11 @@ for i in range(1, rounds + 1):
         print("You Loose")
         loose += 1
 
-print(f'\n\t\t\t\tGame Over \n\nYour Score {win} \nComputer Score {loose}')
+print(f'\n\n\t\t\t\tGame Over \n\nYour Score {win} \nComputer Score {loose}')
 if win > loose:
-    print(f'Congratulation {name} for Wining')
+    print(f'Congratulation Mr/Ms {name} for Wining')
 elif loose > win:
     print(f'Congratulation Computer Ji for Wining')
 else:
     print("Match Draw")
-print(f'Total Win: {win}, Loose: {loose}, Draw: {tie}, Invalid Input {invalid}')
+print(f'\nTotal Round: {rounds}, Win: {win}, Loose: {loose}, Draw: {tie}, Invalid Input {invalid}')

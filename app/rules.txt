@@ -1,0 +1,18 @@
+Welcome to Snake Water Gun game!
+At the end of match result will be publish.
+Follow the given rule to win this match.
+
+Rules :>
+rule 1 : This game for only two people (Computer vs You)
+rule 2 : There r total 10 round in this game
+rule 3 : There r total 3 bets Snake,Water,Gun
+rule 4 : You can choose only 1 bet
+
+How to win :
+choose any bet and comparing with Computer bet You will win/loose.
+example - Snake vs Gun > Gun win, Snake vs Water > Snake win
+
+Comparing Method:> if you choose:
+Snake > then 'Snake' can Beat 'Water' by drinking it but can be beaten by 'Gun'
+Water > then 'Water' can beat 'Gun' by damaging it but can be beaten by 'Snake'
+Gun   > then 'Gun' can beat 'Snake' by killing it but can be beaten by 'Water'

@@ -10,10 +10,10 @@ def int_input(msg=''):
 
 
 n = random.randint(10, 100)
-term = 9
+term = 10
 
 print('Welcome to guess the number game!\nFollow  the given hint to find the number')
-print('Rule : You Have only 9 chance to guess mystery number. ')
+print('Rule : You Have only 10 chance to guess mystery number. ')
 
 num = int_input('Enter any number to guess : ')
 win = False
